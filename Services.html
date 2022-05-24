@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         #bg 
+        {
+            background-image: url('images/bgwhite.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+            .container 
+        {
+            overflow: hidden;
+            border-top: none;
+            
+            padding-top:5px;
+            padding-left: 30px;
+        }
+        
+        @keyframes fade 
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .button
+        {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            float: right;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonEffect 
+        {
+            background-color: #082f61;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+        .buttonEffect:hover 
+        {
+            background-color: white;
+            color: #082f61;
+        }
+        .layer {
+            background-image: linear-gradient(to right,rgba(255, 255, 255, 0.377),rgba(255, 255, 255, 0));
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+        }
+        {
+        	margin:0;
+        	padding:0;
+        	box-sizing:border-box;
+        	font-family:'poppins',sans-serif;
+        }
+        .box-container{
+        	left:25%;
+        	top:50%;
+        	display:flex;
+        	justify-content:center;
+        	align-items:center;
+
+        }
+        .box-container .box{
+        	position:relative;
+        	width:320px;
+        	background:#fff;
+        	padding:100px 40px 60px;
+        	box-shadow: 0 15px 45px rgba(0,0,0,.1);
+        }
+        .box.container .box:before{
+        	content:'';
+        	position:absolute;
+        	top:0;
+        	left:0;
+        	width:100%;
+        	height:100%;
+        	background:pink;
+        	transform:scaleY(0);
+        	transform-origin:top;
+        	transition:transform:0.5%;
+        }
+        .box-container .box:before{
+        	transform:scaleY(1);
+        	transform-origin:bottom;
+        	transition:transform 0.5s;
+
+        }
+        .box-container .box h2{
+        	position:absolute;
+        	left:40px;
+        	top:60px;
+        	font-size:4em;
+        	font-weight:800;
+        	z-index:1;
+        	opacity:0.5;
+        	transition:0.5s;
+
+        }
+        .box-container .box:hover h2{
+        	opacity:1;
+        	color:#fff;
+        	transform:translateY(-40px);
+        }
+        .box-container .box h3{
+        	position:relative;
+        	font-size:1.5em;
+        	z-index:2;
+        	color:#333;
+        	transition: 05s;
+        }
+        .box-container .box h3{
+        	position:relative;
+        	font-size:1.5em;
+        	z-index:2;
+        	color:#333;
+        	transition: 05s;
+
+        }
+        .box-container .box p{
+        	position:relative;
+        	z-index:2;
+        	color:#555;
+        	transition:0.5s;
+        }
+        .box-container .box:hover h3,
+        .box-container .box p
+        {
+        	color:#333;
+        }
+
+    </style>
+    <body id="bg">
+        <div class="layer">             
+        <div class="container" >
+            <img src="images/logo.png" alt="logo" >
+            <button type="button" class="button buttonEffect"  onclick="location.href='portal.php'" >Login</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Offices.html'">Offices</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Services.html'">Services</button>
+        <button type="button" class="button buttonEffect"  onclick="location.href='Contact us.html'">Contact us</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='About Us.html'">About us</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Home.html'">Home</button>
+        </div>
+        <section class="Services">
+        <div class="box-container">
+        	<div class="box">
+        		<h2>01</h2>
+        		<h3>Service One</h3>
+        		<p> Advisory </b>–  Our full-service law firm advises in every law with a specialization in Indirect taxes, IPR, Contracts, International Trade Laws, Corporate Laws, Commercial Laws  etc</p>
+        	</div>
+        	<div class="box">
+        		<h2>02</h2>
+        		<h3>Service Two</h3>
+        		<p> Mediation & Arbitration </b>We handle all Alternative methods of Disputes resolution  where differences lead to mediation & conciliation as well as  disputes leading to commercial arbitration for our domestic & international clients</p>
+        	</div>
+        	<div class="box">
+        		<h2>03</h2>
+        		<h3>Service Three</h3>
+        		<p>Non Litigation </b></b> – We carry out Contract Drafting,  Trademarks and Copyrights Registrations, Various Agreements & Legal Vetting, Due Diligence Reports, etc.</p>
+        	</div>
+        </div>
+    </div>
+</section>
+</body>
+</head>
+</html>

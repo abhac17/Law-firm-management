@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    	#bg 
+        {
+            background-image: url('images/bgwhite.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+            .container 
+        {
+            overflow: hidden;
+            border-top: none;
+            
+            padding-top: 5px;
+            padding-left: 30px;
+        }
+        
+        @keyframes fade 
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .button
+        {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            float: right;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonEffect 
+        {
+            background-color: #082f61;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+        .buttonEffect:hover 
+        {
+            background-color: white;
+            color: #082f61;
+        }
+        .layer {
+            background-image: linear-gradient(to right,rgba(255, 255, 255, 0.377),rgba(255, 255, 255, 0));
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+        }
+        #image {  
+display: block;  
+margin-left: auto;  
+margin-right: auto;  
+border: 4px ridge blue;  
+padding: 5px;  
+position:absolute;
+top:14%;
+left:40%;
+}
+.about.content p{
+	  width:90%;
+            color:#082f61;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            text-align:center;
+        }
+         .tabContent
+        {
+            display: text;
+            padding: 6px 12px;
+            border-top: none;
+            padding-top: 30px;
+            padding-left: 100px;
+            padding-right: 100px;
+            animation: fade 1s;
+            font-size: 120%;
+            text-align:center;
+            bottom:40%;
+
+        }
+}
+    </style>
+
+    
+       <body id="bg">
+        <div class="layer">             
+        <div class="container" >
+            <img src="images/logo.png" alt="logo" >
+            <button type="button" class="button buttonEffect"  onclick="location.href='portal.php'" >Login</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Offices.html'">Offices</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Services.html'">Services</button>
+           <button type="button" class="button buttonEffect"  onclick="location.href='Contact us.html'">Contact us</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='About Us.html'">About us</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Home.html'">Home</button>
+        </div>
+        </div>
+  <section>
+    	<div class='image'>
+        <img src="images/image1.jpg" id='image'width='250' height='150'>
+    </div>
+    <div style = "position:absolute; left:20px; bottom:-58px;class="tabContent";>
+
+    <p style="font-size:18px";>
+                To learn more about J. P. Morgan’s investment business, including our accounts, products and services, as well as our relationship with you, please review our  J.P. Morgan Securities LLC Form CRS and  Guide to Investment Services and Brokerage Products.
+
+                This website is for informational purposes only, and not an offer, recommendation or solicitation of any product, strategy service or transaction. Any views, strategies or products discussed on this site may not be appropriate or suitable for all individuals and are subject to risks. Prior to making any investment or financial decisions, an investor should seek individualized advice from a personal financial, legal, tax and other professional advisors that take into account all of the particular facts and circumstances of an investor's own situation. 
+                This website provides information about the brokerage and investment advisory services provided by J.P. Morgan Securities LLC (JPMS). When JPMS acts as a broker-dealer, a client's relationship with us and our duties to the client will be different in some important ways than a client's relationship with us and our duties to the client when we are acting as an investment advisor. A client should carefully read the agreements and disclosures received (including our Form ADV disclosure brochure, if and when applicable) in connection with our provision of services for important information about the capacity in which we will be acting.
+                <br>
+                
+                Investments in alternative investment strategies is speculative, often involves a greater degree of risk than traditional investments including limited liquidity and limited transparency, among other factors and should only be considered by sophisticated investors with the financial capability to accept the loss of all or part of the assets devoted to such strategies.
+                <br>
+                Borrowing with securities as collateral involves certain risks, including the possibility that you may need to deposit additional securities and/or cash in the account to meet a maintenance call, and that securities in the account may be sold to meet the maintenance call.  Proper management of your account and a thorough understanding of the conditions that may affect your investments will assist you in effectively using the margin lending program.​
+                <br>
+                J.P. Morgan Wealth Management is a business of JPMorgan Chase & Co., which offers investment products and services through J.P. Morgan Securities LLC (JPMS), a registered broker-dealer and investment advisor, member FINRA and SIPC. Annuities are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. Certain custody and other services are provided by JPMorgan Chase Bank, N.A. (JPMCB). JPMS, CIA and JPMCB are affiliated companies under the common control of JPMorgan Chase & Co. Products not available in all states.
+                </p>
+              
+        </div>
+    </section>
+
+
+
+
+</body>
+</head>
+</html>

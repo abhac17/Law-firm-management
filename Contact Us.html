@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <style>
+         #bg 
+        {
+            background-image: url('images/bgwhite.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+            .container
+        {
+            overflow: hidden;
+            border-top: none;
+            
+            padding-top:5px;
+            padding-left: 30px;
+        }
+           .container1
+        {
+            overflow: hidden;
+            border-top: none;
+            
+            padding-top:-25px;
+            padding-left: 30px;
+        }
+        
+        @keyframes fade 
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .button
+        {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            float: right;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonEffect 
+        {
+            background-color: #082f61;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+        .buttonEffect:hover 
+        {
+            background-color: white;
+            color: #082f61;
+        }
+        .layer {
+            background-image: linear-gradient(to right,rgba(255, 255, 255, 0.377),rgba(255, 255, 255, 0));
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+        }
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:'Poppins', sans-srief;
+
+        }
+        .contact
+        {
+            pointer-events:relative;
+            min-height:100vh;
+            padding:50px 50px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .contact .content{
+            max-width:1000px;
+            text-align:center;
+        }
+        .contact .content h2{
+            font-size:56px;
+            font-weight:500;
+            color:black;
+        }
+        .contact .content p{
+            font-size:25px;
+            color:black;
+        }
+         .box-container{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:30px;
+        }
+          .box-container .contactInfo{
+            width:50%;
+            display:flex;
+            flex-direction:column;
+        }
+          .box-container .contactInfo .box{
+            position:relative;
+            padding:2px 0;
+            display:flex;
+        }
+        .box-container .contactInfo .boc .icon{
+            min-width:60px;
+            height:60px;
+            background:black;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius:50%;
+            font-size:22px;
+        }
+
+          .box-container .contactInfo .box .text{
+            display:flex;
+            margin-left:20px;
+            font-size:18px;
+            color:black;
+            flex-direction:column;
+            font-weight:300;
+
+        }
+         .box-container .contactInfo .box .text h3{
+            font-weight:500;
+            color:#00bcd4;
+        }
+        .contactForm{
+            width:40%;
+            padding:20px;
+            background:#082f61;
+        }
+        .contactForm h2{
+            font-size:30px;
+            color:#fff;
+            font-weight:500;
+        }
+        .contactForm .inputBox{
+            position:relative;
+            width:100%;
+            margin-top:10px;
+        }
+        .contactForm .inputBox input{
+            width:100%;
+            padding:5px 0;
+            font-size:16px;
+            margin:10px 0;
+            border:none;
+            border-bottom: 2px solid #333;
+            outline:none;
+            resize:none;
+        }
+        .contactForm .inputBox span{
+            position:absolute;
+            left:0;
+            padding:5px 0;
+            font-size:16px;
+            margin:10px 0;
+            pointer-events:none;
+            transition:0.5%;
+            color:#666;
+        }
+        .contactForm .inputBox  input:focus ~span,
+        .contactForm .inputBox input:valid ~span,
+        .contactForm .inputBox textarea:focus ~span,
+        .contactForm .inputBox textarea:valid ~span
+        {
+            color:#e91e63;
+            font-size:12px;
+            transform:translateY(-20px);
+        }
+        .contactForm .inputBox input[type="submit"]
+        {
+            width:100px;
+            background:#00bcd4;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+            padding:10px;
+            font-size:18px;
+        }
+         @media(max-width:700px)
+         {
+            .contact{
+                padding:50px;
+            }
+            .box-container
+            {
+                flex direction:column;
+            }
+            .box-container .contactInfo{
+                margin-bottom:40px;
+            }
+            .box-container .contactInfo{
+                width:100%;
+            }
+            .layer .conatiner .buttonbuttonEffect{
+                flex direction:column;
+                position:absolute;
+                height:100px;
+                width:200px;
+                top:0;
+                right:0;
+                text-align:left;
+                z-index:2;
+            }
+         .layer .container .button .buttonbuttonEffect{
+                display:block;
+            }
+         }
+
+ </style>
+    <body id="bg">
+        <div class="layer">             
+        <div class="container" >
+            <img src="images/logo.png" alt="logo" >
+            <button type="button" class="button buttonEffect"  onclick="location.href='portal.php'" >Login</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Offices.html'">Offices</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Services.html'">Services</button>
+        <button type="button" class="button buttonEffect"  onclick="location.href='Contact us.html'">Contact us</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='About Us.html'">About us</button>
+            <button type="button" class="button buttonEffect"  onclick="location.href='Home.html'">Home</button>
+        </div>
+  
+            <section class="contact">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>If you want to contact us, please find the details of us below</p>
+                </div>
+                <div class="box-container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>4671 okvill street,<br>Ottawa,Toronto<br>Canada</p>
+                                <p>Gandhi-nagar,<br>234-890,mumbai<br>India</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>504-345-8907<br>Canada</p>
+                                <p>22-24566542<br>India</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>lawfirm@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form>
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea required="required"></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" name="" value="send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</head>
+</html>
